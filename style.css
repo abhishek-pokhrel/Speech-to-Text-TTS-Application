@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+body{
+    background-image: radial-gradient( circle 854px at -25.8% 40.5%,  rgba(0,62,125,1) 0%, rgba(255,255,255,1) 99.9% );
+    background-attachment: fixed;
+
+
+
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+
+
+.voice-box{
+    width: 400px;
+    height: 500px;
+    background: #ADADAD;
+    box-shadow: 10px 4px 25px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    position: relative;
+}
+
+.eraser{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 100px;
+    position: absolute;
+    right: -22px;
+    top: -15px;
+    cursor: pointer;
+}
+
+
+.erasertip{
+    background-color: black;
+    color: white;
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 3px;
+    position: absolute;
+    right: -90px;
+    top: -22px;
+    opacity: 0;
+    font-family: Roboto;
+    transition: 0.30s all;
+    
+}
+
+
+.eraser:hover + .erasertip{
+    opacity: 1;
+}
+
+
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.voice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 100px;
+    position: absolute; 
+    left: 35%;
+    bottom: 10%;
+    cursor: pointer;
+}
+.voice img{
+    width: 25px;
+}
+
+.speak{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 100px;
+    position: absolute; 
+    left: 58%;
+    bottom: 10%;
+    cursor: pointer;
+}
+
+.speak img{
+    width: 25px;
+}
+
+#txtarea{
+    position: absolute;
+    width: 330px;
+    height: 300px;
+    padding: 10px;
+    top: 40px;
+    left: 23px;
+    border-radius: 10px;
+    resize: none;
+    font-size: 20px;
+    font-family: Roboto;
+}
